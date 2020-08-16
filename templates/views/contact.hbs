@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://use.fontawesome.com/83374ddceb.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="navbar-fixed" id="home">
+            <nav class="blue">
+                <div class="container">
+                    <div class="nav-wraper">
+                        <a href="/index" class="brand-logo">SpaceDecor</a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="options"><a href="/index">Services</a></li>
+                            <li class="options"><a href="/kitchen">Kitchen</a></li>
+                            <li class="options"><a href="/bedroom">Bedrooms</a></li>
+                            <li class="options"><a href="/otherservices">OtherServices</a></li>
+                            <li class="options"><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+            <li class="options"><a href="/index">Services</a></li>
+            <li class="options"><a href="/kitchen">Kitchen</a></li>
+            <li class="options"><a href="/bedroom">Bedrooms</a></li>
+            <li class="options"><a href="/otherservices">OtherServices</a></li>
+            <li class="options"><a href="/contact">Contact</a></li>
+        </ul>
+
+        <!--Contact--form-->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card-panel blue white-text">
+                            <i class="material-icons">email</i>
+                            <h5>Contact Us for Booking</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, laboriosam!</p>
+                        </div>
+                        <ul class="collections width-header">
+                            <li class="collection-header"><h6>Location</h6></li>
+                            <li class="collection-header"><h6>SpaceDecor HeadOffice</h6></li>
+                            <li class="collection-header"><h6>1234,SophinaBeach</h6></li>
+                            <li class="collection-header"><h6>Colorado, United States Of America</h6></li>        
+                        </ul>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card-panel grey lighten-4">
+                            <h5>Please Fill out this form</h5>
+                            <form action="/contacts/submit" method="POST">
+                            <div class="input-field">
+                                <input type="text" placeholder="Name" name="name">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="LandMark" name="landmark">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="PinCode" name="pincode">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="City" name="city">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="State"  name="state">
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea"placeholder="Message" name="message"></textarea>
+                            </div>
+                            <input type="submit" value="Submit" class="btn red darken-6">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <footer class="section blue darken-2 white-text center">
+            <p class="flow-text">SpaceDecor &copy; 2020 </p>            
+        </footer>
+</body>
+</html>
